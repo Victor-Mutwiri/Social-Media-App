@@ -10,6 +10,8 @@ import {
   faHeart,
   faMessage,
 } from '@fortawesome/free-regular-svg-icons';
+import {height} from '@fortawesome/free-brands-svg-icons/fa42Group';
+import {rV} from '../../assets/styles/scaling';
 
 const UserPost = props => {
   return (
@@ -36,7 +38,11 @@ const UserPost = props => {
       </View>
       <View style={style.userPostStats}>
         <View style={style.userPostStatButton}>
-          <FontAwesomeIcon icon={faHeart} color="#79869F" />
+          <FontAwesomeIcon
+            icon={faHeart}
+            color="#79869F"
+            style={{height: rV(48)}}
+          />
           <Text style={style.userPostStatText}>{props.likes}</Text>
         </View>
         <View style={style.userPostStatButtonRight}>

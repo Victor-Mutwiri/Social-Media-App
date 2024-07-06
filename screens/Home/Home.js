@@ -161,11 +161,7 @@ const Home = ({navigation}) => {
             <>
               <View style={style.header}>
                 <Title title={'Lets explore'} />
-                <TouchableOpacity
-                  onPress={() => {
-                    navigation.navigate(Routes.Profile);
-                  }}
-                  style={style.messageIcon}>
+                <TouchableOpacity style={style.messageIcon}>
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     size={20}
